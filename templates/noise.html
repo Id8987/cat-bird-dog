@@ -1,0 +1,41 @@
+<!-- templates/noise.html -->
+{% extends "base.html" %}
+{% block title %}Bruitage d'image{% endblock %}
+
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">Ajout de bruit à une image</h2>
+                    <form method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label class="form-label">Intensité du bruit (ε)</label>
+                            <input type="range" class="form-range" min="0" max="1" step="0.1" name="epsilon" value="0.5">
+                            <div class="d-flex justify-content-between">
+                                <small>0 (Aucun bruit)</small>
+                                <small>1 (Bruit maximal)</small>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Sélectionner une image</label>
+                            <input class="form-control" type="file" name="file" accept="image/*" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Générer l'image bruitée</button>
+                    </form>
+
+                    {% if noisy_image %}
+                        <div class="mt-4 text-center">
+                            <img src="{{ noisy_image }}" class="img-fluid rounded shadow" alt="Image bruitée">
+                            <a href="{{ noisy_image }}" download class="btn btn-success mt-3">
+                                Télécharger l'image
+                            </a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
