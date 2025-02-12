@@ -3,8 +3,8 @@
 Une application web intelligente pour classer des images (Oiseaux/Chats/Chiens) avec des fonctionnalités avancées d'IA et de traitement d'image.
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://python.org)
-[![Flask](https://img.shields.io/badge/Flask-2.3.2-green)](https://flask.palletsprojects.com)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.13.0-orange)](https://tensorflow.org)
+[![Flask](https://img.shields.io/badge/Flask-3.1.0-green)](https://flask.palletsprojects.com)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15.1-orange)](https://tensorflow.org)
 
 ## ✨ Fonctionnalités
 
@@ -27,7 +27,7 @@ Une application web intelligente pour classer des images (Oiseaux/Chats/Chiens) 
 
 1. Cloner le dépôt :
 ```bash
-git clone https://github.com/votre-utilisateur/votre-repo.git
+git clone https://github.com/Id8987/cat-bird-dog.git
 cd votre-repo
 ```
 2. Créer un environnement virtuel :
